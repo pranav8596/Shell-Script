@@ -24,18 +24,23 @@ function fahrenheitToCelcius() {
 	fi
 }
 
-echo -e "1. Celcius to Fahrenheit\n2. Fahrenheit To Celcius"
-read choice
+#To make a choice of the Conversions
+function degreeConversions() {
+	echo -e "1. Celcius to Fahrenheit\n2. Fahrenheit To Celcius"
+	read choice
+	case $choice in
+		1)
+			celciusToFahrenheit
+			;;
+		2)
+			fahrenheitToCelcius
+			;;
+		*)
+			echo "Invalid choice!"
+			;;
+	esac
+}
 
-case $choice in
-	1)
-		celciusToFahrenheit
-		;;
-	2)
-		fahrenheitToCelcius
-		;;
-	*)
-		echo "Invalid choice!"
-		;;
-esac
+degreeConversions
+
 
