@@ -4,30 +4,31 @@ read -p "Enter a number(1 - 7): " singleDigit
 
 case $singleDigit in
 	1)
-		echo SUNDAY
+		day=SUNDAY
 		;;
 	2)
-		echo MONDAY
+		day=MONDAY
 		;;
 	3)
-		echo TUESDAY
+		day=TUESDAY
 		;;
 	4)
-		echo WEDNESDAY
+		day=WEDNESDAY
 		;;
 	5)
-		echo THURSDAY
+		day=THURSDAY
 		;;
 	6)
-		echo FRIDAY
+		day=FRIDAY
 		;;
 	7)
-		echo SATURDAY
+		day=SATURDAY
 		;;
 	*)
-		echo Invalid
+		day=Invalid
 		;;
 esac
+echo $day
 
 
 
