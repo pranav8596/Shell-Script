@@ -1,7 +1,7 @@
-#!/bin/bash -x
+#!/bin/bash
 
 #Constants
-MIN_VALUE=-1
+MIN_VALUE=-9999
 MAX_VALUE=10000
 GREATER_THAN='-gt'
 LESS_THAN='-lt'
