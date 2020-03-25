@@ -3,7 +3,10 @@
 #Declaration of a Dictionary
 declare -A dictionary
 
+#Constants
 MAX_TIMES=10
+
+#Variables
 oneCount=0
 twoCount=0
 threeCount=0
