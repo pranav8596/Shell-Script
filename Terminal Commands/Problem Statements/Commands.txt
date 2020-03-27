@@ -1,0 +1,193 @@
+
+  324  git clone https://github.com/edurekavivekh/linux-content.git
+  325  ls
+  326  ls
+  327  mkdir 'Shell Script New'
+  328  mkdir 'Terminal Commands'
+  329  mv 'Terminal Commands'/'Shell Script New'/
+  330  mv 'Terminal Commands'/ 'Shell Script New'/
+  331  #!/bin/bash -x
+  332  for file in `ls *.txt`; do 	folderName=`echo $file | awk -F. '{print $1}'`; 	if[ -d $folderName ]; 	then
+  333  touch File & Directory Commands.txt
+  334  ls
+  335  touch 'File & Directory Commands'.txt
+  336  ls
+  337  ls
+  338  touch 'File Management'.txt 'View & Browse Files'.txt 'Pipe & Grep Commands'.txt 'Env Variables & Disk Usage'.txt 'Process Management'.txt 'AWK Commands'.txt 'Conditions & Loops'.txt
+  339  ls
+  340  touch abc.txt def.txt ghi.txt jkl.txt
+  341  ls
+  342  nano -T 3 moveFilesToRespectiveFolders.sh
+  343  chmod +x moveFilesToRespectiveFolders.sh 
+  344  ./moveFilesToRespectiveFolders.sh 
+  345  ls
+  346  nano -T 3 moveFilesToRespectiveFolders.sh
+  347  nano -T 3 moveFilesToRespectiveFolders.sh
+  348  ./moveFilesToRespectiveFolders.sh 
+  349  nano -T 3 moveFilesToRespectiveFolders.sh
+  350  ./moveFilesToRespectiveFolders.sh 
+  351  ls
+  352  nano -T 3 moveFilesToRespectiveFolders.sh
+  353  ./moveFilesToRespectiveFolders.sh 
+  354  ls
+  355  ./moveFilesToRespectiveFolders.sh 
+  356  nano -T 3 moveFilesToRespectiveFolders.sh
+  357  ./moveFilesToRespectiveFolders.sh 
+  358  nano -T 3 moveFilesToRespectiveFolders.sh
+  359  ./moveFilesToRespectiveFolders.sh 
+  360  ./moveFilesToRespectiveFolders.sh 
+  361  nano -T 3 moveFilesToRespectiveFolders.sh
+  362  ./moveFilesToRespectiveFolders.sh 
+  363  ls
+  364  ls abc/ def/ ghi/ jkl/
+  365  nano -T 3 moveFilesToRespectiveFolders.sh
+  366  nano -T 3 moveFilesToRespectiveFolders.sh
+  367  ./moveFilesToRespectiveFolders.sh 
+  368  nano -T 3 moveFilesToRespectiveFolders.sh
+  369  ./moveFilesToRespectiveFolders.sh 
+  370  nano -T 3 moveFilesToRespectiveFolders.sh
+  371  ./moveFilesToRespectiveFolders.sh 
+  372  ls
+  373  ls -p abc
+  374  ls */
+  375  nano -T 3 moveFilesToRespectiveFolders.sh
+  376  ./moveFilesToRespectiveFolders.sh 
+  377  nano -T 3 moveFilesToRespectiveFolders.sh
+  378  ./moveFilesToRespectiveFolders.sh 
+  379  nano -T 3 moveFilesToRespectiveFolders.sh
+  380  ./moveFilesToRespectiveFolders.sh 
+  381  nano -T 3 moveFilesToRespectiveFolders.sh
+  382  ./moveFilesToRespectiveFolders.sh 
+  383  nano -T 3 moveFilesToRespectiveFolders.sh
+  384  ./moveFilesToRespectiveFolders.sh 
+  385  nano -T 3 moveFilesToRespectiveFolders.sh
+  386  ./moveFilesToRespectiveFolders.sh 
+  387  nano -T 3 moveFilesToRespectiveFolders.sh
+  388  ./moveFilesToRespectiveFolders.sh 
+  389  ls
+  390  ./moveFilesToRespectiveFolders.sh 
+  391  ls */
+  392  nano -T 3 moveFilesToRespectiveFolders.sh
+  393  cd ..
+  394  ls
+  395  cd linux-content/
+  396  ls
+  397  cat data.csv 
+  398  cat data.csv | grep -i captain
+  399  cat data.csv | grep -i captain | awk '{print $2 " " $4}'
+  400  grep -i captain | awk '{print $2 " " $4}' data.csv 
+  401  clear
+  402  awk '{print $2}' data.csv 
+  403  grep -i captain | awk '{print $2}' data.csv 
+  404  cat data.csv | grep -i captain
+  405  cat data.csv | grep -i captain | awk '{sum+=$4} END {print sum}'
+  406  cat data.csv | grep -i captain | awk '{sum+=$4} END {print sum/NR}'
+  407  history
+  408  echo Hello Tom
+  409  echo Hello Tom | awk '{$2 = "Pranav"} [print $0]'
+  410  echo Hello Tom | awk '{$2 = "Pranav"} {print $0}'
+  411  ls
+  412  nano -T 3 HelloWorld.java
+  413  javac HelloWorld.java 
+  414  java HelloWorld.
+  415  java HelloWorld
+  416  java --version
+  417  java -version
+  418  javac HelloWorld.java 
+  419  java HelloWorld
+  420  nano -T 3 HelloWorld.java
+  421  java HelloWorld.java
+  422  nano -T 3 HelloWorld.java
+  423  javac HelloWorld.java 
+  424  java HelloWorld
+  425  ls
+  426  javac HelloWorld.java 
+  427  java HelloWorld
+  428  java HelloWorld java
+  429  java HelloWorld.java
+  430  javac HelloWorld.java 
+  431  java HelloWorld
+  432  ls
+  433  javac HelloWorld.java
+  434  javac HelloWorld.java 
+  435  java HelloWorld
+  436  ps
+  437  ps -elf
+  438  ps -elf | more
+  439  cat HelloWorld
+  440  cat HelloWorld.java
+  441  nano -T 3 HelloWorld.java
+  442  cat HelloWorld.java
+  443  nano -T 3 HelloWorld.java
+  444  cat HelloWorld.java
+  445  java HelloWorld
+  446  java HelloWorld
+  447  jobs
+  448  fg %1
+  449  history
+  450  fg %1
+  451  bg %1
+  452  jobs
+  453  ps
+  454  ps -elf
+  455  ps -elf | grep java
+  456  ps -elf | grep java | grep -v java
+  457  kill -9 1022
+  458  ls
+  459  javac HelloWorld.java
+  460  javac HelloWorld.java 
+  461  java HelloWorld
+  462  ps
+  463  ps -elf
+  464  ps -elf | more
+  465  cat HelloWorld
+  466  cat HelloWorld.java
+  467  nano -T 3 HelloWorld.java
+  468  cat HelloWorld.java
+  469  nano -T 3 HelloWorld.java
+  470  cat HelloWorld.java
+  471  java HelloWorld
+  472  java HelloWorld
+  473  jobs
+  474  fg %1
+  475  history
+  476  fg %1
+  477  bg %1
+  478  jobs
+  479  ps
+  480  ps -elf
+  481  ps -elf | grep java
+  482  ps -elf | grep java | grep -v java
+  483  kill -9 1022
+  484  history
+  485  jobs
+  486  java HelloWorld.java &
+  487  jobs
+  488  java HelloWorld.java
+  489  jobs
+  490   fg %1
+  491  bg %1
+  492  kill %1
+  493  jobs
+  494  obs
+  495  clear
+  496  java HelloWorld.java &
+  497  java HelloWorld.java &
+  498  kill all java
+  499  killall java
+  500  ps -elf
+  501  ps -elf
+  502  ps -elf | grep java
+  503  ps -elf | grep java | grep -v java | awk '{print $4}'
+  504  kill -9 `ps -elf | grep java | grep -v java | awk '{print $4}'`
+  505  jobs
+  506  java HelloWorld.java &
+  507  myPid=`ps -elf | grep java | grep -v java | awk '{print $4}'`
+  508  echo $myPid
+  509  kill -9 $myPid
+  510  history
+  511  history > Commands.sh
+  512  ls
+  513  nano Commands.sh 
+  514  nano Commands.sh 
+  515  history > Commands.txt

@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 
 #Constants
 IS_PART_TIME=1
@@ -31,7 +31,7 @@ function getWorkingHours() {
 	echo $empHours
 }
 
-#To get Daily wage of the Employee 
+#To get Daily wage of the Employee
 function getDailyWage() {
 	workHours=$1
 	wage=$(($workHours * $EMP_RATE_PER_HOUR))
@@ -39,14 +39,18 @@ function getDailyWage() {
 }
 
 #Calculating wages till working days or working hours reaches to a limit
-while [[ $totalWorkHrs -lt $MAX_HRS_IN_MONTH && $totalWorkDays -lt $MAX_WORKING_DAYS ]]
-do
-	((totalWorkDays++))
-	workHours="$(getWorkingHours)"
-	totalWorkHrs=$(($totalWorkHrs + $workHours))
-	employeeDailyWage[$totalWorkDays]="$(getDailyWage $workHours)"
-done
+function empWageComputation() {
+	while [[ $totalWorkHrs -lt $MAX_HRS_IN_MONTH && $totalWorkDays -lt $MAX_WORKING_DAYS ]]
+	do
+		((totalWorkDays++))
+		workHours="$(getWorkingHours)"
+		totalWorkHrs=$(($totalWorkHrs + $workHours))
+		employeeDailyWage[$totalWorkDays]="$(getDailyWage $workHours)"
+	done
+	totalSalery=$(( $EMP_RATE_PER_HOUR * $totalWorkHrs ))
+	echo "Daily wage: ${employeeDailyWage[@]}"
+	echo "Total salery of a month: $totalSalery"
+}
 
-totalSalery=$(( $EMP_RATE_PER_HOUR * $totalWorkHrs ))
-echo -e "Daily wage of a month:   ${employeeDailyWage[@]}"
-echo "Total salery of a month: $totalSalery"
+#Main
+empWageComputation
